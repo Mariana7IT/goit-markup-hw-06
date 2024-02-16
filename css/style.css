@@ -269,10 +269,10 @@ color: #404BBF;
 }
 .features-list {
     display: flex;
-    
+    flex-wrap: wrap;
+    gap : 62px;
     flex-direction: column;
-    align-items: center ;
-    gap: 72px;
+    align-items: center;
 }
 
 .features-icon-container{
@@ -307,7 +307,6 @@ color: #404BBF;
     margin-bottom: 8px;
     justify-content: center;
     text-align: center;
-   
 }
 
 .feature-item-text {
@@ -318,8 +317,6 @@ color: #404BBF;
     letter-spacing: 0.02em;
     max-width: 288px;
     justify-content: center;
-   
-   
 }
 
 /*========SECTION3-Team========== */
@@ -994,12 +991,18 @@ overflow: hidden;
     }
 
     .hero {
+        padding: 112px 0;
         max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
         background-image:
         linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/people-office-tab.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
     }
 
     @media screen and (min-devise-pixel-ratio: 2),
@@ -1014,9 +1017,47 @@ overflow: hidden;
 }
 }
 
+.hero-container{
+    display: block;
+    align-items: center;
+    }
 
+    .hero-title {
+    
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        max-width: 496px;
+        width: 100%;
+        margin-bottom: 36px;
+        text-transform: capitalize;
+        padding-left: 136px;
+        padding-right: 136px;
+    }
+    .hero-btn {
+        margin-bottom:112px;
+}
+.features {
+    padding: 96px 0;
+    background: #FFF;
+}
+.features-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 24px, row-gap: 72px;
+    align-items: center;
 }
 
+.features-icon-container{
+    display: none;
+}
+
+
+}
 /* Normal */
 @media screen and (min-width: 1158px) {
     .container {
@@ -1071,7 +1112,6 @@ overflow: hidden;
         url(../images/people-office-2x.jpg);    
 }
 }
-
     .hero-title {
         font-size: 56px; 
         line-height: 1.07; 
@@ -1247,7 +1287,6 @@ overflow: hidden;
     .team-icon-link:hover{
         background-color: #404bbf;  
     }
-    
     
     .team-icon-icon {
         fill: #F4F4FD; 
