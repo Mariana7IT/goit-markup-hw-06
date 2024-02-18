@@ -1139,6 +1139,11 @@ overflow: hidden;
         padding: 96px 0;
         background: #FFF;
 }
+
+.features-box{
+padding: 0 16px;
+margin-right: 0;
+}
     .features-list {
         display: flex;
         flex-direction: row;
@@ -1169,13 +1174,16 @@ align-self: stretch;
     .features-icon-container{
     display: none;
 }
+.team-container-box{
+    padding: 0 108px;
+}
 
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
-        padding: 0 108px; 
+        
 }
 
     .team-item{
