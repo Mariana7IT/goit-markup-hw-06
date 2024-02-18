@@ -1175,7 +1175,7 @@ align-self: stretch;
     display: none;
 }
 .team-container-box{
-    padding: 0 108px;
+    
 }
 
     .team-list {
@@ -1421,6 +1421,7 @@ align-self: stretch;
         display: flex;
         align-items: center;
         gap: 24px;
+        
     }
     
     .team-item {
