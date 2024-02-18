@@ -631,7 +631,6 @@ overflow: hidden;
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-     
 }
 
 .footer-container-two {
@@ -1147,6 +1146,24 @@ overflow: hidden;
         column-gap: 24px;
         row-gap: 72px;
         align-items: center;
+        padding: 0 16px;
+}
+.features-subtitle{
+    
+font-size: 36px;
+font-weight: 700;
+line-height: 1.1; 
+letter-spacing: 0.02em;
+text-transform: capitalize;
+}
+
+.feature-item-text{
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+align-self: stretch;
+
 }
 
     .features-icon-container{
@@ -1157,7 +1174,8 @@ overflow: hidden;
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: 72px;
-        column-gap: 24px; 
+        column-gap: 24px;
+        padding: 0 108px; 
 }
 
     .team-item{
@@ -1197,17 +1215,16 @@ overflow: hidden;
         margin: 0 auto;
         justify-content: start;
         text-align: start;
-
+        gap: 24px;
     }
 
     .footer-logo{
         text-align: start;
-
     }
 
     .footer-container-two {
-        margin-left: 24px;
         align-items: start;
+        
     }
     .footer-container-three {
         align-items: flex-start;
@@ -1224,7 +1241,7 @@ overflow: hidden;
         width: 264px;
     }
     .footer-icon-btn{
-        margin-left: 24px;
+       
     }
 
     }
@@ -1499,7 +1516,7 @@ overflow: hidden;
 }
 
 .footer-container-three{
-   
+    
 }
 
 .footer-input{
