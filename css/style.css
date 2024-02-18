@@ -509,6 +509,7 @@ color: #404BBF;
 }
 
 .portfolio-item {
+    max-width: 100%;
     /* width: calc((100% - 48px) / 3);  */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -592,7 +593,9 @@ overflow: hidden;
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    /* align-items: baseline; */
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -601,6 +604,7 @@ overflow: hidden;
 }
 
 .footer-logo {
+    padding: 0 102px;
     color: #4D5AE5;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -611,6 +615,8 @@ overflow: hidden;
     flex-shrink: 0;
     display: inline-block;
     margin-bottom: 16px;
+    justify-content: center;
+    
     
 }
 
@@ -624,11 +630,16 @@ overflow: hidden;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;  
+    max-width: 264px;
+     
 }
 
 .footer-container-two {
-    margin-left: 120px;
+    align-items: left;
+    margin-bottom: 72px;
+    margin-top: 72px;
+    
+    /* margin-left: 120px; */
 }
 
 .footer-text-two {
@@ -639,7 +650,9 @@ overflow: hidden;
     color: white;
     align-self: stretch;
     max-width: 208px; 
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
+    margin-left: 112px;
+    
 }
 
 .footer-icon-list {
@@ -647,6 +660,7 @@ overflow: hidden;
     align-items: flex-start;
     gap: 16px;
     align-self: stretch;
+    padding-left: 40px;
     
 }
 
@@ -680,10 +694,17 @@ overflow: hidden;
 
 .footer-container-three {
     margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap ;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .footer-text-three {
-    
+    padding-left: 122px;
+    justify-content: center;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
@@ -695,7 +716,8 @@ overflow: hidden;
 }
 
 .contact-form {
-    display: flex; 
+    display: flex;
+    flex-direction: column; 
     gap: 24px;
 }
 
@@ -724,7 +746,8 @@ overflow: hidden;
 
 .footer-btn {
     height: 40px;
-    display:flex;
+    display: inline-flex;
+    margin: 0 auto;
     justify-content: center;
     cursor: pointer;
     text-align: center;
@@ -739,7 +762,7 @@ overflow: hidden;
     letter-spacing: 0.04em;
     color: #fff;
     padding: 8px 24px;
-    min-width: 165px;
+    max-width: 165px;
     margin-bottom: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -1128,14 +1151,18 @@ overflow: hidden;
 
     .features-icon-container{
     display: none;
-    }
+}
 
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px; 
-    }
+}
+
+    .team-item{
+    max-width: 264px;
+}
 
     .portfolio {
         padding-top: 120px;
@@ -1157,7 +1184,7 @@ overflow: hidden;
     }
 
     .footer-text{
-        width: 264px; 
+        width: 264px;
     }
 
     .footer-container {
@@ -1166,7 +1193,7 @@ overflow: hidden;
         flex-wrap: wrap;
         align-items: baseline;
         row-gap: 72px;
-        column-gap: 24px;
+        padding-left: 108px;
         margin: 0 auto;
         justify-content: start;
         text-align: start;
@@ -1175,11 +1202,11 @@ overflow: hidden;
 
     .footer-logo{
         text-align: start;
-        margin-left: 108px;
 
     }
 
     .footer-container-two {
+        margin-left: 24px;
         align-items: start;
     }
     .footer-container-three {
@@ -1196,7 +1223,9 @@ overflow: hidden;
         margin: 0;
         width: 264px;
     }
-
+    .footer-icon-btn{
+        margin-left: 24px;
+    }
 
     }
 
@@ -1441,5 +1470,57 @@ overflow: hidden;
 }
     .portfolio-item {
         width: calc((100% - 48px) / 3); 
+}
+
+.footer{
+    padding: 100px 0;
+    margin-right: 0px;
+    margin-right: 0px;
+    
+}
+
+.footer-container{
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    margin: 0 auto; 
+}
+
+.footer-container-two{
+    margin-left: 120px;
+    margin-right: 80px;
+} 
+
+.footer-icon-list{
+    display: flex; 
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.footer-container-three{
+   
+}
+
+.footer-input{
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row; 
+    gap: 24px;
+}
+
+.footer-label {
+    display: flex; 
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    margin-bottom: 16px;
+}
+
+.footer-btn{
+    display:flex;
 }
 }
