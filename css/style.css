@@ -389,8 +389,6 @@ color: #404BBF;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 288px;
-    justify-content: center;
 }
 
 /*========SECTION3-Team========== */
@@ -425,7 +423,7 @@ color: #404BBF;
 .team-item {
     background-color: #FFFFFF; 
     border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100% - 72px) / 4);
+    /* flex-basis: calc((100% - 72px) / 4); */
     gap: 24px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     justify-self: center ;
@@ -1091,10 +1089,6 @@ overflow: hidden;
         background: #FFF;
 }
 
-    .features-box{
-    padding: 0 16px;
-    margin-right: 0;
-}
     .features-list {
     display: flex;
     flex-direction: row;
@@ -1102,24 +1096,17 @@ overflow: hidden;
     column-gap: 24px;
     row-gap: 72px;
     align-items: center;
-    padding: 0 16px;
+}
+
+.features-item{
+    width: calc((100% - 24px) / 2);
 }
 .features-subtitle{
-    
-font-size: 36px;
-font-weight: 700;
-line-height: 1.1; 
-letter-spacing: 0.02em;
-text-transform: capitalize;
+    text-align: left;
 }
 
-.feature-item-text{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    align-self: stretch;
-
+.feature-item-text{ 
+    
 }
 
     .features-icon-container{
@@ -1134,11 +1121,12 @@ text-transform: capitalize;
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
+        justify-content: center;
         
 }
 
     .team-item{
-    max-width: 264px;
+    width: 264px;
 }
 
     .portfolio {
@@ -1171,22 +1159,32 @@ text-transform: capitalize;
         align-items: baseline;
         row-gap: 72px;
         padding-left: 108px;
+        padding-right: 108px;
         margin: 0 auto;
         justify-content: start;
         text-align: start;
-        gap: 24px;
+        column-gap: 24px;
+
     }
 
     .footer-logo{
-        align-items: start;
+    
     }
 
+    .footer-container-one{
+    text-align: left;
+    }
     .footer-container-two {
-        align-items: start;
+        margin-top: 0px;
+        margin-bottom: 0px;
         
     }
-    .footer-container-three {
-        align-items: flex-start;
+
+    .footer-text-two {
+        text-align: left;
+    }
+    .footer-text-three {
+    text-align: left;
     }
     .contact-form {
         display: flex;
