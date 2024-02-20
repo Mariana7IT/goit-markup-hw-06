@@ -1443,9 +1443,9 @@ overflow: hidden;
 
 .footer{
     padding: 100px 0;
-    margin-right: 0px;
-    margin-right: 0px;
-    max-width: 1440px;
+    
+    
+    
     
 }
 
@@ -1474,22 +1474,10 @@ overflow: hidden;
     
 }
 
-.footer-input{
-    margin-left: 80px;
-}
-
 .contact-form {
     display: flex;
     flex-direction: row; 
     gap: 24px;
-}
-
-.footer-label {
-    display: flex; 
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
-    margin-bottom: 16px;
 }
 
 .footer-btn{
