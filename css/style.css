@@ -1105,15 +1105,8 @@ overflow: hidden;
     text-align: left;
 }
 
-.feature-item-text{ 
-    
-}
-
     .features-icon-container{
     display: none;
-}
-.team-container-box{
-    
 }
 
     .team-list {
@@ -1144,9 +1137,6 @@ overflow: hidden;
     .portfolio-item {
         width: calc((100% - 24px) / 2);
     } 
-    .portfolio-img {
-        
-    }
 
     .footer-text{
         width: 264px;
@@ -1165,10 +1155,6 @@ overflow: hidden;
         text-align: start;
         column-gap: 24px;
 
-    }
-
-    .footer-logo{
-    
     }
 
     .footer-container-one{
@@ -1373,10 +1359,7 @@ overflow: hidden;
         gap: 24px;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
-    
-    .team-img { 
-    }
-    
+
     .team-subtitle {
         color: #2E2F42;
         text-align: center;
