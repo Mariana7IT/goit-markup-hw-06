@@ -926,7 +926,6 @@ overflow: hidden;
     text-decoration-line: underline;
 }
 
-
 .modal-field-container {
     margin-bottom: 16px;
 }
@@ -997,7 +996,6 @@ overflow: hidden;
     .hero {
         padding: 112px 0;
         width: 100%;
-        
         background-image:
         linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1023,7 +1021,6 @@ overflow: hidden;
     }
 
     .hero-title {
-        
         font-size: 56px;
         max-width: 496px;
         margin-bottom: 36px;
@@ -1060,7 +1057,6 @@ overflow: hidden;
         row-gap: 72px;
         column-gap: 24px;
         justify-content: center;
-        
 }
 
     .team-item{
@@ -1291,7 +1287,6 @@ overflow: hidden;
         display: flex;
         align-items: center;
         gap: 24px;
-        
     }
     
     .team-item {
