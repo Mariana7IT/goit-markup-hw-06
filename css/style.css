@@ -233,10 +233,10 @@ color: #404BBF;
 .hero {
     /* padding: 188px 0; */
     padding: 72px 0; 
-    background-color: #2E2F42;
-    max-width: 320px;  
+    background-color: #2E2F42;  
     width: 100%;
     margin: 0 auto;
+    max-width: 1440px;
     background-image:
     linear-gradient(
     rgba(46, 47, 66, 0.7),
@@ -271,10 +271,7 @@ color: #404BBF;
     font-family: Roboto;
     font-size: 36px;
     line-height: 1.1;
-    /* font-size: 56px; */
-    /* line-height: 1.07; */
     letter-spacing: 0.02em;
-    /* max-width: 496px; */
     max-width:216px;
     width: 100%;
     margin-bottom: 72px;
@@ -282,7 +279,7 @@ color: #404BBF;
     margin-left: auto;
     margin-right: auto;
     text-transform: capitalize;
-   
+
 }
 
 .hero-btn {
@@ -1089,17 +1086,14 @@ overflow: hidden;
 
     .hero {
         padding: 112px 0;
-        max-width: 768px;
         width: 100%;
-        margin: 0 auto;
+        
         background-image:
         linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/people-office-tab.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
+        
     }
 
     @media screen and (min-devise-pixel-ratio: 2),
@@ -1120,19 +1114,10 @@ overflow: hidden;
     }
 
     .hero-title {
-        color: #FFF;
-        text-align: center;
-        font-family: Roboto;
+        
         font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
         max-width: 496px;
-        width: 100%;
         margin-bottom: 36px;
-        text-transform: capitalize;
-        padding-left: 136px;
-        padding-right: 136px;
-        max-width: 496px;
     }
 
     .hero-btn {
