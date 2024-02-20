@@ -144,7 +144,7 @@ color: #404BBF;
     top: 0;
     left: 0;
     background: #FFF;
-    padding: 16px;
+    padding: 72px 16px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -161,8 +161,8 @@ color: #404BBF;
 .mob-nav {
 }
 .mob-list {
-    margin-bottom: 168px;
-    padding-left: 16px;
+    margin-bottom: auto;
+    
 }
 .mob-item:not(:last-child){
     margin-bottom: 40px;
@@ -174,20 +174,33 @@ color: #404BBF;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
+    
 }
-.current {
+.active {
+    color: #404BBF;
 }
 .mob-list-link {
+    margin-bottom: 24px;
 
 }
 .mob-list-item {
+    margin-bottom: 24px;
+}
+
+.mob-contact{
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 .mob-icon-list {
     display: flex;
     gap: 40px;
 }
 .mob-icon-item {
+    height: 40px;
+    width: 40px;
 }
 .mob-icon-link {
     width: 100%;
@@ -200,8 +213,8 @@ color: #404BBF;
 }
 
 .mob-icon-icon {
-    fill: transparent;
-    stroke: rgba(244, 244, 253, 1);
+    fill: rgba(244, 244, 253, 1);
+    
 }
 
 
@@ -501,6 +514,7 @@ color: #404BBF;
 
 .portfolio-item {
     max-width: 100%;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     /* width: calc((100% - 48px) / 3);  */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -592,11 +606,10 @@ overflow: hidden;
 }
 
 .footer-container-one {
-    
+    text-align: center;
 }
 
 .footer-logo {
-    padding: 0 102px;
     color: #4D5AE5;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -622,7 +635,8 @@ overflow: hidden;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
+    text-align: left;
+    /* max-width: 264px; */
 }
 
 .footer-container-two {
@@ -639,19 +653,17 @@ overflow: hidden;
     line-height: 1.5; 
     letter-spacing: 0.02em;
     color: white;
-    align-self: stretch;
-    max-width: 208px; 
+    text-align: center;
     margin-bottom: 16px;
-    margin-left: 112px;
+    
     
 }
 
 .footer-icon-list {
     display: flex; 
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
-    align-self: stretch;
-    padding-left: 40px;
+    
 }
 
 .footer-icon-item {
@@ -683,18 +695,16 @@ overflow: hidden;
 /* FORM FOOTER */
 
 .footer-container-three {
-    margin-left: auto;
+    /* margin-left: auto;
     display: flex;
     flex-direction: column;
     flex-wrap:wrap ;
     align-items: flex-start;
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: center; */
+    
 }
 
 .footer-text-three {
-    padding-left: 122px;
-    justify-content: center;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
@@ -702,25 +712,22 @@ overflow: hidden;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
     margin-top: 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    
 }
 
 .contact-form {
     display: flex;
     flex-direction: column; 
-    gap: 24px;
+    gap: 16px;
 }
 
 .footer-label {
-    display: flex; 
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
-    margin-bottom: 16px;
+    
 }
 
 .footer-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid #fff;
@@ -756,7 +763,6 @@ overflow: hidden;
     color: #fff;
     padding: 8px 24px;
     max-width: 165px;
-    margin-bottom: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
@@ -801,6 +807,7 @@ overflow: hidden;
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%) scale(1);
+    max-width: calc(100% - 32px);
     width: 408px;
     min-height: 584px;
     background-color: #FCFCFC;
@@ -934,6 +941,8 @@ overflow: hidden;
 }
 
 .chek-text {
+    display: flex;
+    align-items: center;
     color:  #8E8F99;
     font-size: 12px;
     font-weight: 400;
@@ -954,7 +963,8 @@ overflow: hidden;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     justify-content: center; 
-    fill: transparent; 
+    fill: transparent;
+    flex-shrink: 0; 
 }
 
 .form-chek:checked + .chek-text .chek-part  {
@@ -1429,6 +1439,7 @@ text-transform: capitalize;
         column-gap: 24px;
 }
     .portfolio-item {
+        box-shadow: none;
         width: calc((100% - 48px) / 3); 
 }
 
